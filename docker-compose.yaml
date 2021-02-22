@@ -39,6 +39,8 @@ services:
       - dockernet
     ports:
       - "8080:80"
+    depends_on: 
+      - app
 
 networks: 
   dockernet:
